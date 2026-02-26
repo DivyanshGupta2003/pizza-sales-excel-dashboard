@@ -13,8 +13,8 @@ The goal of this project is to analyze pizza sales data and generate meaningful 
 - Total Revenue Generated
 - Total Orders & Quantity Sold
 - Best-Selling Pizza
-- Sales by Category (Veg/Non-Veg)
-- Sales by Size (Small, Medium, Large)
+- Sales by Category
+- Sales by Size
 - Monthly Sales Trends
 - Peak Order Hours
 
@@ -32,17 +32,32 @@ The goal of this project is to analyze pizza sales data and generate meaningful 
 
 ---
 
+## 📌 Skills Demonstrated
+
+- Data Cleaning & Transformation
+- Business Intelligence Reporting
+- Data Visualization
+- Analytical Thinking
+- Dashboard Design
+
+---
+
 ## 📁 Dataset
 
 The dataset contains:
-- Order ID
-- Order Date
-- Pizza Name
-- Category
-- Size
-- Quantity
-- Price
-- Total Price
+- Pizza_id
+- Order_iD
+- total_orders
+- pizza_name_id
+- quantity
+- order_date
+- order_day
+- order_time
+- unit_price
+- pizza_Regularize
+- pizza_category
+- pizza_ingredients
+- pizza_name
 
 ---
 
