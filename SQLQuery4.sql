@@ -1,18 +1,18 @@
 Select * from pizza_sales;
 
---1)
+--1) TOTAL REVENUE 
 Select SUM(total_price) AS Total_Revevue from pizza_sales;
 
---2)
+--2) AVERAGE ORDER VALUE
 SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales;
 
---3)
+--3) TOTAL PIZZAS SOLD 
 SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
 
---4)
+--4) TOTAL ORDERS
 SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
 
---5)
+--5) AVERAGE PIZZAS PER ORDER
 SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2))
 AS Avg_Pizzas_per_order
 FROM pizza_sales;
@@ -68,4 +68,5 @@ ORDER BY Total_Pizza_Sold DESC
 SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 GROUP BY pizza_name
+
 ORDER BY Total_Pizza_Sold ASC
